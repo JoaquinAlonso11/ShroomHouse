@@ -163,11 +163,12 @@ a, p, label {
       align-items: center;
       vertical-align: center;
       
+      
     }
 
 .imgSlider,
 .prodSlider {
-  width: 49.9%;
+  width: 50%;
   display: flex;
   height: 100%;
   box-sizing: border-box; 
@@ -217,14 +218,14 @@ a, p, label {
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
   user-select: none;
+  background-color: rgba(0,0,0,0.1);
 }
 
 /* Position the "next button" to the right */
 .next {
   right: 0;
-  border-radius: 3px 0 0 3px;
+  
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -243,22 +244,13 @@ a, p, label {
   text-align: center;
 }
 
-
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
+.numbertext {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 18px;
 }
 
 /* Fading animation */
@@ -272,7 +264,7 @@ a, p, label {
   to {opacity: 1}
 }
 
-/*        banner          */
+                        /*        banner          */
 .centralBanner {
    
     width: 100%;

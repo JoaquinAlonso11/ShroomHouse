@@ -90,14 +90,8 @@
   <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
   <a class="next" onclick="plusSlides(1)">&#10095;</a>
 </div>
-<br>
 
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
+
         </div>
     </main>
         
@@ -139,38 +133,41 @@
         </ul>
     </footer>
     <script>
-let slideIndex = 0;
-showSlides();
+let slideIndex = 1;
+let interval; // Variable para controlar el intervalo de cambio automático
 
-function showSlides() {
-    let i;
-    let slides = document.getElementsByClassName("slideContainer");
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    slides[slideIndex-1].style.display = "block";
-    setTimeout(showSlides, 4000); // Cambia la imagen automáticamente cada 4 segundos
-}
+showSlides(slideIndex);
 
 function plusSlides(n) {
-    showSlidesByIndex(slideIndex + n);
+    showSlides(slideIndex += n);
+    clearInterval(interval); // Borra el intervalo actual
+    startInterval(); // Inicia el intervalo nuevamente
 }
 
 function currentSlide(n) {
-    showSlidesByIndex(n);
+    showSlides(slideIndex = n);
+    clearInterval(interval); // Borra el intervalo actual
+    startInterval(); // Inicia el intervalo nuevamente
 }
 
-function showSlidesByIndex(n) {
+function showSlides(n) {
     let slides = document.getElementsByClassName("slideContainer");
-    if (n < 1) {slideIndex = slides.length}
-    if (n > slides.length) {slideIndex = 1}
+    if (n > slides.length) { slideIndex = 1; }
+    if (n < 1) { slideIndex = slides.length; }
     for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-    slides[slideIndex-1].style.display = "block";
+    slides[slideIndex - 1].style.display = "block";
 }
+
+function startInterval() {
+    interval = setInterval(function () {
+        plusSlides(1);
+    }, 6000); // Cambia la imagen automáticamente cada 4 segundos
+}
+
+// Inicia el intervalo al cargar la página
+startInterval();
     </script>
 </body>
 </html>
