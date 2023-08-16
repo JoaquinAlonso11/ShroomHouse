@@ -110,6 +110,7 @@ a, p, label {
   
   max-width: 90%;
   height: 6vh;
+  mix-blend-mode: multiply;
  
 }
 
