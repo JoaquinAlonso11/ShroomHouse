@@ -1,0 +1,632 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+
+body {
+  background-color: #fffcf8;
+  font-family: 'DINNeuzeitGrotesk LT', sans-serif;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.5px;
+}
+
+h1, h2 {
+  font-family: "Windsor";
+}
+
+h1 {
+  font-size: 60px;
+  text-shadow: 0 0 1.5px black;
+  
+}
+
+.siteAlert {
+  position: relative;
+  background-color: black;
+  color: aliceblue;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  z-index: 2;
+}
+
+.header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  box-shadow: 0px 2px rgba(216, 191, 166, 0.432);
+  display: flex;
+  justify-content: space-between;
+ 
+}
+
+a, p, label {
+  font-weight: 600;
+  font-size: smaller;
+  text-align: center;
+}
+
+.menuNav {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-grow: 2;
+}
+
+.menuNav ul {
+  display: flex;
+  align-items: center;
+  align-self: center;
+}
+
+.menuNav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.menuNav a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  transition: font-size 0.1s;
+  -webkit-transition: font-size 0.1s;
+  -moz-transition: font-size 0.1s;
+  -ms-transition: font-size 0.1s;
+  -o-transition: font-size 0.1s;
+}
+.menuNav a:visited {
+  color: #333; 
+}
+
+.menuNav a:hover {
+  font-size: 1em; 
+}
+
+.miniLogoContainer{
+     
+  width: 20%;
+  display: flex;  
+  margin: 0;
+  justify-content: center;
+  
+
+}
+
+#miniLogo {
+  
+  max-width: 90%;
+  height: 6vh;
+  mix-blend-mode: multiply;
+ 
+}
+
+/*contenedor de iconos de redes sociales*/
+.socialIcons {
+  list-style: none;
+  display: flex;
+  align-items: right;
+  margin: 0px;
+  width: 20%;
+  justify-content: center;
+  
+  
+}
+
+
+.social-icons {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.social-icons li {
+  margin: 0 10px;
+}
+
+.social-icons a {
+  color: #333;
+  font-size: 20px;
+}
+
+.mainContent {
+  margin-top: 1px;
+}
+
+.slideShowContainer {
+  display: flex;
+}
+
+
+.slideContainer {
+    
+    
+    height: 100vh;
+      width: 100%;
+      display: inline-flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      vertical-align: center;
+      
+      
+    }
+
+.imgSlider,
+.prodSlider {
+  width: 50%;
+  display: flex;
+  height: 100%;
+  box-sizing: border-box; 
+  float: left;
+}
+
+.prodSlider {
+  
+  background-color: antiquewhite;
+}
+
+.imgSlider {
+      
+    background-position: center;
+    max-width: 100%; 
+    height: 100%;
+    background-size: cover;
+  }
+
+  .callIndex {
+    width: 60%;
+    font-size:larger;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .prodSlider h1 {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+
+  /* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+  background-color: rgba(0,0,0,0.1);
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size: 18px;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+                        /*        banner          */
+.centralBanner {
+   
+    width: 100%;
+    background-color: #f2f2f2;
+
+}
+
+.centralBanner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.productContainer {
+    text-align: center; 
+  
+  }
+  
+  .productContainer img {
+    width: 350px; 
+    margin: 40px 15px; 
+    display: inline-block; 
+    vertical-align: middle; 
+  }
+
+  .enlaceBoton {
+  align-items: center;
+  background-color: black;
+  display: inline-block;
+  text-decoration: none;
+  padding: 15px 50px 15px 50px;
+  margin-top: 2rem;
+  color: white;
+  font-size: 1rem;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.enlaceBoton:hover {
+  background-color: #333;
+}
+  
+
+            /*           testimonios        */
+
+  .testimoniosContainer {
+    text-align: center; 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 10px;
+    
+  }
+  
+  .testimonios {
+    text-align: center;
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: rgba(0, 0, 0, 0.1);
+  }
+  
+  .testimonios img {
+    width: 150px; 
+    border-radius: 50%; 
+  }
+  
+  .testimonios h2 {
+    margin-top: 10px; 
+  }
+  
+  .testimonios h3 {
+    color: #777; 
+  }
+  
+  .testimonios p {
+    margin-top: 10px; 
+    font-weight: 600;
+    font-size: smaller;
+  }
+  
+
+  .joinUs {
+    background-color: #F9F4ED;
+    padding: 75px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.joinUs h2 {
+    margin-bottom: 25px;
+}
+
+.joinUs input {
+    padding: 10px;
+    width: 250px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.joinUs button {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.site-footer {
+  background-color: #E2D7C8;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.footer-text {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+
+/* Estilos para los iconos de Font Awesome */
+.fa-whatsapp:hover {
+  color: #5f5f5f;
+}
+
+.fa-facebook:hover {
+  color: #5f5f5f;
+}
+
+.fa-instagram:hover {
+  color: #5f5f5f;
+}
+
+        /*      Productos      */
+
+
+ .mainProductos {
+          width: 100%;
+          height: 900px;
+          display: flex;
+          flex-direction: column;
+        
+        }
+        
+        .upBanner {
+          height: 100px;
+          width: 100%;
+          background-image: url(../images/Shroom1.jpg);
+          background-size: cover;
+          background-position: center;
+          display: flex;
+          filter: brightness(50%);
+          -webkit-filter: brightness(50%);
+        }
+        
+        .prodSection {
+          background-color: #F9F4ED;
+          display: flex;
+          width: 100%;
+          height: 140px;
+          justify-content: left;
+          align-items: center;
+          
+        }
+        
+        .prodSection h2 {
+          padding-left: 7rem;
+        }
+        
+        .prodCategorias {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 30px;
+          width: 100%;
+          justify-content: center;
+          margin-top: 50px;
+          
+         
+        }
+        
+        .prodBox {
+          display: flex;
+          flex-direction: column;
+          width: 20%;
+          padding-bottom: 20px;
+          border-bottom: 2px solid black;
+        }
+        
+        .prodBox h2 {
+          margin: 10px 0 15px 0;
+        }
+        
+        .prodBox p {
+          padding: 6px;
+        }
+        
+
+
+
+/* Nosotros.html */
+
+.mainNosotros {
+  text-align: center;
+  margin: 5rem 0 0rem 0rem;
+  height: 99vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 2rem 0 2rem;
+  
+}
+
+.nosotros {
+  align-items: center;
+  height: 100%;
+   /* overflow-y:scroll;
+    -webkit-overflow-scrolling:touch; */
+  
+
+}
+
+.upBannerNos {
+  height: 100px;
+  width: 100%;
+  background-image: url(../images/magicshroomscolor.jpg);
+  background-size: cover;
+  background-position: 50% 25%;
+  display: flex;
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+}
+
+
+.nosotros p {
+  font-size: small;
+  font-weight: 600;
+  margin: 1rem;
+  
+}
+
+
+.imgNosotros {
+  max-width: 70%;
+  max-height: 70%;
+  width: auto;
+  height: auto;
+  margin: 3rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Agrega una sombra a la imagen */
+  border-radius: 8px; 
+}
+
+/* contacto */
+
+#h1Form {
+  text-align: center;
+  padding: 30px;
+}
+
+.formulario {
+  width: 80%; 
+  margin: 25px auto; 
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+}
+
+
+#nombre, #email, #fechaNacimiento, #mensaje, #apellido {
+  display: block;
+  width: 30%;
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#enviarForm {
+  display: block;
+  width: 29%;
+  padding: 10px;
+  font-size: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+  
+/* experiences */
+
+.mainExperiences {
+  height: 600px;
+  width: 100%;
+  background-image: url(../images/mushroomplano.webp);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.mainExperiences h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  text-shadow: 0 0 2px #fffcf8;
+}
+
+.callExperiences {
+  width: 60%;
+  font-size:larger;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+
+
+
+.textExperiences {
+  margin: 6rem 0 2rem 0;
+}
+
+.textExperiences h4, h1 {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.textExperiences h4 {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+
+.bottomExperiences {
+  height: 500px;
+  width: 100%;
+  background-image: url(../images/magicshroomscolor.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+
