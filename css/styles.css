@@ -148,6 +148,9 @@ a, p, label {
   margin-top: 1px;
 }
 
+
+/*          Slider         */
+
 .slideShowContainer {
   display: flex;
 }
@@ -176,9 +179,16 @@ a, p, label {
   float: left;
 }
 
-.prodSlider {
-  
-  background-color: antiquewhite;
+.slideShowContainer .slideContainer:nth-child(1) .prodSlider {
+  background-color: #F8DDEB; /* Cambia "color1" por el color que desees */
+}
+
+.slideShowContainer .slideContainer:nth-child(2) .prodSlider {
+  background-color: #FFC483; /* Cambia "color2" por el color que desees */
+}
+
+.slideShowContainer .slideContainer:nth-child(3) .prodSlider {
+  background-color: #cbb1e8; /* Cambia "color3" por el color que desees */
 }
 
 .imgSlider {
@@ -252,6 +262,7 @@ a, p, label {
   transform: translate(-50%, -50%);
   color: black;
   font-size: 18px;
+  display: none;
 }
 
 /* Fading animation */
@@ -269,15 +280,35 @@ a, p, label {
 .centralBanner {
    
     width: 100%;
-    background-color: #f2f2f2;
+    
+    background-image: url('../images/central-banner.webp');
+    background-size: cover;
+    height: 320px;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 
 }
 
-.centralBanner img {
-    width: 100%;
-    height: auto;
-    display: block;
+.centralBanner h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  
 }
+
+.callCentralBanner {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+
+/*                productos                   */
 
 .productContainer {
     text-align: center; 
@@ -318,7 +349,7 @@ a, p, label {
     text-align: center; 
     max-width: 800px; 
     margin: 0 auto; 
-    padding: 10px;
+    padding-top: 100px;
     
   }
   
@@ -330,6 +361,7 @@ a, p, label {
     border: 1px solid #ccc;
     border-radius: 5px;
     background: rgba(0, 0, 0, 0.1);
+    
   }
   
   .testimonios img {
@@ -350,8 +382,35 @@ a, p, label {
     font-weight: 600;
     font-size: smaller;
   }
-  
 
+  /* Estilos para ocultar los testimonios excepto el primero */
+.testimoniosContainer .testimonios:not(.testimonio-1) {
+  display: none;
+}
+
+/* Estilos para los dots de navegación */
+.dotsContainer {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  display: inline-block;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #333;
+  transform: scale(1.2); /* Aumentar un poco el tamaño del dot activo */
+  transition: transform 0.3s ease;
+}
+  
+                  /*                           Join Us                                 */
   .joinUs {
     background-color: #F9F4ED;
     padding: 75px;

@@ -99,24 +99,65 @@
     </main>
         
         <section class="centralBanner">
-            <img src="https://picsum.photos/970/138?grayscale" alt="Banner Central">
+            <div class="callCentralBanner">
+            <h4>Subtitulo</h4>
+            <br>
+            <h1>Brand Application</h1>
+            <a class="enlaceBoton" href="pages/contacto.html">Contactanos</a>
+            </div>
+            
 
         </section>
 
         <section class="productContainer">
-            <img src="https://picsum.photos/200/300" alt="Producto 1">
-            <img src="https://picsum.photos/200/300" alt="Producto 2">
-            <img src="https://picsum.photos/200/300" alt="Producto 3">
+            <div class="prodCategorias">
+                <div class="prodBox">
+                    <img src="images/energy1.webp" alt="">
+                    <h2>Energeticos</h2>
+                    <p>Ver todos    →</p>
+                </div>
+                <div class="prodBox">
+                    <img src="images/immunity1.webp" alt="">
+                    <h2>Inmunitarios</h2>
+                    <p>Ver todos    →</p>
+                </div>
+                <div class="prodBox">
+                    <img src="images/chill1.webp" alt="">
+                    <h2>Tranquilizantes</h2>
+                    <p>Ver todos    →</p>
+                </div>
+                <div class="prodBox">
+                    <img src="images/focus1.webp" alt="">
+                    <h2>Concentracion</h2>
+                    <p>Ver todos    →</p>
+                </div>
           </section>
 
        <section class="testimoniosContainer">
-          <div class="testimonios">
-            <img src="https://picsum.photos/200?grayscale" alt="Foto de usuario">
-            <h2>Nombre del usuario</h2>
-            <h3>Subtítulo</h3>
+          <div class="testimonios testimonio-1">
+            <img src="https://i.pravatar.cc/400?img=68" alt="Foto de usuario 1">
+            <h2>Mario Arregui</h2>
+            <h3>Psicologo</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus faucibus lacus, eu aliquam odio sodales a. Vestibulum sit amet mauris eget nunc vulputate congue eu ac odio.</p>
+        </div>
+        <div class="testimonios testimonio-2">
+            <img src="https://i.pravatar.cc/400?img=9" alt="Foto de usuario 2">
+            <h2>Agustina Lopez</h2>
+            <h3>Periodista</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus faucibus lacus, eu aliquam odio sodales a. Vestibulum sit amet mauris eget nunc vulputate congue eu ac odio.</p>
+        </div>
+        <div class="testimonios testimonio-3">
+            <img src="https://i.pravatar.cc/400?img=56" alt="Foto de usuario 3">
+            <h2>Leandro Perez</h2>
+            <h3>Agricultor</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus faucibus lacus, eu aliquam odio sodales a. Vestibulum sit amet mauris eget nunc vulputate congue eu ac odio.</p>
         </div>
        </section>
+       <div class="dotsContainer">
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+      </div>
        <section class="joinUs">
         <h2>Quieres saber mas? Suscribete aqui</h2>
         <form>
@@ -172,5 +213,41 @@ function startInterval() {
 // Inicia el intervalo al cargar la página
 startInterval();
     </script>
+    <script>
+        const testimoniosSlides = document.querySelectorAll('.testimonios');
+        const dotButtons = document.querySelectorAll('.dot');
+        
+        let testimonioIndex = 0;
+        
+        function mostrarTestimonioSlide(index) {
+          testimoniosSlides.forEach(testimonioSlide => {
+            testimonioSlide.style.display = 'none';
+          });
+          testimoniosSlides[index].style.display = 'block';
+        }
+        
+        function activarDotButton(index) {
+          dotButtons.forEach(dot => {
+            dot.classList.remove('active');
+          });
+          dotButtons[index].classList.add('active');
+        }
+        
+        function cambiarTestimonioSlide(index) {
+          mostrarTestimonioSlide(index);
+          activarDotButton(index);
+        }
+        
+        dotButtons.forEach((dot, index) => {
+          dot.addEventListener('click', () => {
+            cambiarTestimonioSlide(index);
+            testimonioIndex = index;
+          });
+        });
+        
+        mostrarTestimonioSlide(testimonioIndex);
+        activarDotButton(testimonioIndex);
+        
+        </script>
 </body>
 </html>
