@@ -428,7 +428,7 @@ a, p, label {
     margin-bottom: 25px;
 }
 
-.joinUs input {
+#joinEmail {
     padding: 10px;
     width: 250px;
     margin-right: 10px;
