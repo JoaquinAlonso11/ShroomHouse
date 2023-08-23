@@ -839,6 +839,14 @@ h1 {
   flex-wrap: nowrap;
 }
 
+.prodSection {
+  justify-content: center;
+}
+
+.prodSection h2 {
+  padding: 0;
+}
+
 .callIndex {
   width: 100%;
   height: 50vh;
