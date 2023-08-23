@@ -120,22 +120,22 @@
                 <div class="prodBox">
                     <img src="images/energy1.webp" alt="">
                     <h2>Energeticos</h2>
-                    <p>Ver todos    →</p>
+                    <a href="#">Ver todos    →</a>
                 </div>
                 <div class="prodBox">
                     <img src="images/immunity1.webp" alt="">
                     <h2>Inmunitarios</h2>
-                    <p>Ver todos    →</p>
+                    <a href="#">Ver todos    →</a>
                 </div>
                 <div class="prodBox">
                     <img src="images/chill1.webp" alt="">
                     <h2>Tranquilizantes</h2>
-                    <p>Ver todos    →</p>
+                    <a href="#">Ver todos    →</a>
                 </div>
                 <div class="prodBox">
                     <img src="images/focus1.webp" alt="">
                     <h2>Concentracion</h2>
-                    <p>Ver todos    →</p>
+                    <a href="#">Ver todos    →</a>
                 </div>
           </section>
 
@@ -155,7 +155,7 @@
         <div class="testimonios testimonio-3">
             <img src="https://i.pravatar.cc/400?img=56" alt="Foto de usuario 3">
             <h2>Leandro Perez</h2>
-            <h3>Productor Agricultor</h3>
+            <h3>Productor Agricola</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla dapibus faucibus lacus, eu aliquam odio sodales a. Vestibulum sit amet mauris eget nunc vulputate congue eu ac odio.</p>
         </div>
        </section>
@@ -201,20 +201,20 @@
     </script>
     <script>
 let slideIndex = 1;
-let interval; // Variable para controlar el intervalo de cambio automático
+let interval; 
 
 showSlides(slideIndex);
 
 function plusSlides(n) {
     showSlides(slideIndex += n);
-    clearInterval(interval); // Borra el intervalo actual
-    startInterval(); // Inicia el intervalo nuevamente
+    clearInterval(interval); 
+    startInterval(); 
 }
 
 function currentSlide(n) {
     showSlides(slideIndex = n);
-    clearInterval(interval); // Borra el intervalo actual
-    startInterval(); // Inicia el intervalo nuevamente
+    clearInterval(interval); 
+    startInterval(); 
 }
 
 function showSlides(n) {
@@ -230,10 +230,10 @@ function showSlides(n) {
 function startInterval() {
     interval = setInterval(function () {
         plusSlides(1);
-    }, 6000); // Cambia la imagen automáticamente cada 4 segundos
+    }, 6000); 
 }
 
-// Inicia el intervalo al cargar la página
+
 startInterval();
     </script>
     <script>

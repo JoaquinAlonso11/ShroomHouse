@@ -238,13 +238,11 @@ a, p, label {
   background-color: rgba(0,0,0,0.1);
 }
 
-/* Position the "next button" to the right */
 .next {
   right: 0;
   
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -313,41 +311,7 @@ a, p, label {
 }
 
 
-/*                productos                   */
 
-.productContainer {
-    text-align: center; 
-  
-  }
-  
-  .productContainer img {
-    max-width: 300px; 
-    margin: 40px 15px; 
-    display: flex; 
-    align-items: center;
-    justify-content: center;
-  }
-
-  .enlaceBoton {
-  align-items: center;
-  background-color: black;
-  display: inline-block;
-  text-decoration: none;
-  padding: 15px 50px 15px 50px;
-  margin-top: 2rem;
-  color: white;
-  font-size: 1rem;
-  border-radius: 4px;
-  -webkit-border-radius: 4px;
-  -moz-border-radius: 4px;
-  -ms-border-radius: 4px;
-  -o-border-radius: 4px;
-}
-
-.enlaceBoton:hover {
-  background-color: #333;
-}
-  
 
             /*           testimonios        */
 
@@ -412,7 +376,7 @@ a, p, label {
 
 .dot.active {
   background-color: #333;
-  transform: scale(1.2); /* Aumentar un poco el tamaño del dot activo */
+  transform: scale(1.2); 
   transition: transform 0.3s ease;
 }
   
@@ -477,6 +441,38 @@ a, p, label {
 
         /*      Productos      */
 
+        .productContainer {
+          text-align: center; 
+        
+        }
+        
+        .productContainer img {
+          max-width: 300px; 
+          margin: 40px 15px; 
+          display: flex; 
+          align-items: center;
+          justify-content: center;
+        }
+      
+        .enlaceBoton {
+        align-items: center;
+        background-color: black;
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px 50px 15px 50px;
+        margin-top: 2rem;
+        color: white;
+        font-size: 1rem;
+        border-radius: 4px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        -ms-border-radius: 4px;
+        -o-border-radius: 4px;
+      }
+      
+      .enlaceBoton:hover {
+        background-color: #333;
+      }
 
  .mainProductos {
           width: 100%;
@@ -536,8 +532,11 @@ a, p, label {
           margin: 10px 0 15px 0;
         }
         
-        .prodBox p {
+        .prodBox a {
           padding: 6px;
+          color: black;
+          text-decoration: none;
+          
         }
         
 
@@ -558,8 +557,7 @@ a, p, label {
 .nosotros {
   align-items: center;
   height: 100%;
-   /* overflow-y:scroll;
-    -webkit-overflow-scrolling:touch; */
+  
   
 
 }
@@ -590,7 +588,7 @@ a, p, label {
   width: auto;
   height: auto;
   margin: 3rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); /* Agrega una sombra a la imagen */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
   border-radius: 8px; 
 }
 
@@ -652,17 +650,35 @@ a, p, label {
 .mainExperiences h1 {
   text-align: center;
   margin-bottom: 3rem;
-  text-shadow: 0 0 2px #fffcf8;
+  text-shadow: 1.5px 1px black;
+  
 }
 
 .callExperiences {
-  width: 60%;
+  width: 100%;
   font-size:larger;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
   flex-direction: column;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fffcf8;
+}
+
+.callExperiences p {
+  margin: 0 15rem;
+  text-shadow: 1.5px 1px black;
+  
+}
+
+.callExperiences h4 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 4rem;
+  text-align: center;
+  text-shadow: 1.5px 1px black;
 }
 
 
@@ -672,7 +688,7 @@ a, p, label {
   margin: 6rem 0 2rem 0;
 }
 
-.textExperiences h4, h1 {
+.textExperiences h1 {
   text-align: center;
   margin-bottom: 4rem;
 }
@@ -680,6 +696,8 @@ a, p, label {
 .textExperiences h4 {
   font-size: 0.8rem;
   font-weight: 600;
+  margin-bottom: 4rem;
+  text-align: center;
 }
 
 
@@ -706,6 +724,7 @@ a, p, label {
   .productContainer {
     display: flex;
     flex-direction: column;
+    margin-bottom: 3rem;
   }
   
   .prodCategorias {
@@ -718,6 +737,30 @@ a, p, label {
   .prodBox {
     align-items: center;
     justify-content: center;
+    font-size: 0.9rem;
+  }
+
+  
+
+  .mainProductos {
+    height: auto;
+  }
+
+
+  .callExperiences p {
+    margin: 0 5rem;
+    
+    
+  }
+
+  .dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 8px;
+  }
+
+  #nombre, #email, #fechaNacimiento, #mensaje, #apellido {
+    width: 60%;
   }
  
 }
@@ -783,7 +826,7 @@ h1 {
 
 
 .slideShowContainer {
-  flex-direction: column; /* Cambio: Apilamiento de columnas */
+  flex-direction: column; 
   flex-flow: column;
 }
 
