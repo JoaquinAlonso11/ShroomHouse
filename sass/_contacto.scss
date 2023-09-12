@@ -1,0 +1,55 @@
+#h1Form {
+    text-align: center;
+    padding: 30px;
+}
+
+.formulario {
+    width: 80%; 
+    margin: 25px auto; 
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+
+    #nombre, #email, #fechaNacimiento, #mensaje, #apellido {
+        display: block;
+        width: 30%;
+        margin-bottom: 15px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+        @include tablet {
+            width: 60%;
+        }
+    }
+    
+    #mensaje {
+        max-height: 30vh;
+        max-width: 80%;
+        min-width: 30%;
+        min-height: 5vh;
+
+        @include tablet {
+            min-width: 60%;
+        }
+    }
+    
+    #enviarForm {
+        display: block;
+        width: 29%;
+        padding: 10px;
+        font-size: 16px;
+        background-color: $colorBase3;
+        color: $colorBase1;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        
+        &:hover {
+            background-color: $colorHover1;
+        }
+    }
+}

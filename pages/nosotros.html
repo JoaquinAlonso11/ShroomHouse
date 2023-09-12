@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../fonts/stylesheet.css">
 </head>
 <body>
-    <div class="siteAlert"><strong>ALERTA DEL SITIO</strong></div>
+    <div class="siteAlert"><strong>DOS X UNO EN ARTICULOS SELECCIONADOS</strong></div>
     <header class="header">
         
         <div class="miniLogoContainer">
@@ -40,15 +40,16 @@
         
         <section class="nosotros">
             <h1>Sobre ShroomHouse</h1>
-            <img src="https://picsum.photos/700/400?grayscale" class="imgNosotros" alt="Imagen sobre nosotros">
-            <p class="textoNosotros">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam tenetur nobis rerum iusto excepturi reiciendis non nihil, doloremque similique quidem voluptatibus? Sapiente pariatur autem nesciunt esse quia, doloribus in at blanditiis corrupti vel? Assumenda est fugiat iure, dignissimos magni aut consectetur numquam deserunt eum minus, amet, quam recusandae culpa soluta porro enim ut earum quod. Modi rerum libero nisi! A ipsa, eius inventore quam, explicabo facere quibusdam qui distinctio aperiam excepturi consectetur quidem! Ipsam esse voluptatum accusamus autem sint delectus error quis, asperiores omnis quasi doloribus nobis corporis quia eos illo ea excepturi, maxime unde quo non pariatur, necessitatibus numquam!</p>
-            <p class="textoNosotros">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit nobis nemo fugit nihil sint, iure at. Odio sint reprehenderit accusamus maiores obcaecati delectus totam rem enim vero quo. Culpa, quis. Fuga, quidem voluptatibus deserunt et ducimus eligendi laboriosam repudiandae labore commodi autem exercitationem accusantium fugit, atque consectetur excepturi fugiat sunt hic aperiam eos dolorem officiis nam, voluptate similique? Molestias quaerat hic eius repellendus nemo excepturi qui sed aperiam repudiandae labore quos, a itaque distinctio assumenda illo vitae at. Velit, quas.</p>
+            <img src="../images/ShroomHouseLogo.webp" class="imgNosotros" alt="Imagen sobre nosotros">
+            <p class="textoNosotros">En el año 2023, ShroomHouse surgió como una visión audaz y un compromiso inquebrantable con la fusión de dos mundos aparentemente dispares: los hongos y las experiencias sensoriales. Desde entonces, hemos florecido como un pionero en el ámbito de la micología y la exploración sensorial, ofreciendo una perspectiva completamente nueva en la relación entre el ser humano y la naturaleza.</p>
+            <p class="textoNosotros">Somos mucho más que una simple tienda en línea. Somos una comunidad de mentes curiosas que buscan descubrir las profundidades del reino de los hongos. Nuestro catálogo se extiende desde productos innovadores a base de hongos, como superalimentos y exquisiteces culinarias, hasta experiencias transformadoras. Te invitamos a embarcarte en un viaje sensorial sin igual, donde nuestros talleres psicodélicos te llevarán a explorar las dimensiones más intrigantes de tu mente.</p>
+            <p class="textoNosotros">Creemos en la conexión entre la naturaleza y la conciencia humana, y es nuestra misión inspirarte a explorar y descubrir nuevas dimensiones de la vida a través de nuestros productos y experiencias únicas. En la verdadera casa del Shroom, celebramos la magia que se encuentra en la simbiosis entre los hongos y el ser humano, y te animamos a unirte a nosotros en este viaje de descubrimiento y crecimiento. Juntos, abrazamos el futuro con una mirada enriquecedora hacia el pasado, encontrando en los hongos no solo alimentos, sino también una puerta hacia experiencias que jamás olvidarás. ¡Bienvenido a ShroomHouse!</p>
         </section>
 
     </main>
 
     <section class="joinUs">
-        <h2>Quieres saber mas? Suscribete aqui</h2>
+        <h2>Quieres saber más? Suscribete aquí</h2>
         <form>
             <input type="email" id="joinEmail" placeholder="Ingresa tu email" required>
             <button type="submit">Suscribirse</button>
@@ -56,8 +57,10 @@
 
        </section>
 
-    <footer class="site-footer">
-        <a href="../index.html"><img src="../images/ShroomHouseMiniLogo.jpg" id="miniLogo" alt="Logo Miniatura" href="../index.html"></a>
+       <footer class="site-footer">
+        <div class="miniLogoContainer">
+            <a href="../index.html"><img src="../images/ShroomHouseMiniLogo.jpg" id="miniLogo" alt="Logo Miniatura"></a>
+        </div>
         <p class="footer-text">© 2023 Mi Página Web. Todos los derechos reservados.</p>
         <div class="socialFooter">
         <ul class="social-icons">
@@ -67,20 +70,6 @@
         </ul>
         </div>
     </footer>
-    <script>
-        const menuNav = document.querySelector("#menuNav");
-        const abrir = document.querySelector("#abrir");
-        const cerrar = document.querySelector("#cerrar");
-        
-        abrir.addEventListener("click", () => {
-            menuNav.classList.add("visible");
-        })
-
-        cerrar.addEventListener("click", () => {
-            menuNav.classList.remove("visible");
-        })
-
-        
-    </script>
+    <script src="../scripts/scripts.js"></script>
 </body>
 </html>

@@ -1,0 +1,83 @@
+@import "media-queries";
+@import "base/variables";
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    -webkit-text-size-adjust: 100%;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+  }
+  
+  
+  body {
+    background-color: $colorBase2;
+    font-family: 'DINNeuzeitGrotesk LT', Verdana, Tahoma, sans-serif;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0.5px;
+      
+      h1, h2 {
+      font-family: "Windsor" , Verdana, Tahoma, sans-serif;
+      }
+        h1 {
+      font-size: 60px;
+      text-shadow: 0 0 1.5px $colorBase3;
+      
+          @include tablet {
+            font-size: 40px;
+            text-align: center;
+            font-size: 3rem;
+          }
+
+        }
+        a, p, label {
+          font-weight: 600;
+          font-size: smaller;
+          text-align: center;
+        }
+  }
+         /*      Header       */ 
+  
+  @import "header";
+
+          /* Slider Principal */
+  
+  @import "mainslider";
+  
+                          /*        banner          */
+
+  @import "centralbanner";
+  
+  
+              /*           testimonios        */
+  
+  @import "testimonios";
+                 /*                           Join Us                                 */
+  @import "joinus";
+  
+  /* footer */
+
+  @import "footer";
+
+          /*      Productos      */
+  
+  @import "productos";
+  
+  /* Nosotros.html */
+  
+  @import "nosotros";
+
+  
+  
+  /* contacto */
+  
+  @import "contacto";
+    
+  /* experiences */
+  
+  @import "experiencias";
+  

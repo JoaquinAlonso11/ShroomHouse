@@ -1,0 +1,49 @@
+.mainNosotros {
+    text-align: center;
+    margin: 5rem 0 0rem 0rem;
+    height: 99vh;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 2rem 0 2rem;
+    
+
+
+    .nosotros {
+    align-items: center;
+    height: 100%;
+    
+    }
+
+    .upBannerNos {
+    height: 100px;
+    width: 100%;
+    background-image: url(../images/magicshroomscolor.jpg);
+    background-size: cover;
+    background-position: 50% 25%;
+    display: flex;
+    filter: brightness(50%);
+    -webkit-filter: brightness(50%);
+    }
+    .textoNosotros {
+    font-size: small;
+    font-weight: 600;
+    margin: 2rem;
+    
+    }
+    .imgNosotros {
+    max-width: 70%;
+    max-height: 70%;
+    width: auto;
+    height: auto;
+    margin: 6rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4); 
+    border-radius: 8px; 
+
+    @include mobile {
+        margin: 2.5rem;
+    }
+    }
+    @include tablet {
+        height: auto;
+    }
+}

@@ -1,0 +1,81 @@
+.mainExperiences {
+    height: 600px;
+    width: 100%;
+    background-image: url(../images/mushroomplano.webp);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    .callExperiences {
+        width: 100%;
+        font-size:larger;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        flex-direction: column;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.4);
+        color: $colorBase1;
+        
+        .enlaceBoton {
+        margin-top: 2rem;
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 3rem;
+            text-shadow: 1.5px 1px $colorBase3;
+            
+        }
+
+        p {
+            margin: 0 15rem;
+            text-shadow: 1.5px 1px $colorBase3;
+            
+            @include tablet {
+                margin: 0 5rem;
+            }
+        }
+
+        h4 {
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 4rem;
+            text-align: center;
+            text-shadow: 1.5px 1px $colorBase3;
+        }
+    }
+}
+
+.textExperiences {
+    margin: 6rem 0 2rem 0;
+
+    h1 {
+        text-align: center;
+        margin-bottom: 4rem;
+    }
+    
+    h4 {
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 4rem;
+        text-align: center;
+    }
+}
+
+.bottomExperiences {
+    height: 500px;
+    width: 100%;
+    background-image: url(../images/magicshroomscolor.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-top: 8rem;
+}

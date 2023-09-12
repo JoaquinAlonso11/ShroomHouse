@@ -1,0 +1,68 @@
+.site-footer {
+    background-color: $colorBase5;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    @include mobile {
+    display:inherit;
+    }
+
+    .footer-text {
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+
+    @include mobile {
+        font-size: 12px;
+    }
+    
+    }
+    .miniLogoContainer{
+    width: 25%;
+
+    @include mobile {
+        display: none;
+    }
+
+    #miniLogo {
+        max-width: 90%;
+        height: 6vh;
+        mix-blend-mode: multiply;
+        
+    }
+    }
+    
+    .socialFooter {
+        
+        display: flex;
+        margin: 0px;
+        width: 25%;
+        justify-content: center;
+
+        @include mobile {
+        display:none;
+        }
+        
+
+        .social-icons {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            width: 25%;
+    
+            li {
+                margin: 0 10px;
+            }
+            a {
+                color: $colorHover1;
+                font-size: 20px;
+            }
+        }
+        
+    } 
+}
