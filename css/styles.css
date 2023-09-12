@@ -236,6 +236,11 @@ body a, body p, body label {
   margin: 2rem;
 }
 @media screen and (max-width: 790px) {
+  .prodSlider h1 {
+    margin: 0rem;
+  }
+}
+@media screen and (max-width: 790px) {
   .prodSlider {
     flex-direction: column;
     flex-wrap: nowrap;
@@ -258,6 +263,11 @@ body a, body p, body label {
 }
 .enlaceBoton:hover {
   background-color: #333;
+}
+@media screen and (max-width: 790px) {
+  .enlaceBoton {
+    margin-top: 1rem;
+  }
 }
 
 .imgSlider {

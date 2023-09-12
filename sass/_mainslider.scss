@@ -45,6 +45,10 @@
     h1 {
         text-align: center;
         margin: 2rem;
+
+        @include mobile {
+            margin: 0rem;
+        }
         }
 
     @include mobile {
@@ -70,6 +74,10 @@
 
     &:hover {
     background-color: $colorHover1;
+    }
+
+    @include mobile {
+        margin-top: 1rem;
     }
 }
 
