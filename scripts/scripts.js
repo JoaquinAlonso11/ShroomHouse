@@ -57,6 +57,8 @@ document.getElementById("siguiente").addEventListener("click", function() {
 });
   
     // Script 3: Testimonios
+    
+    
     const testimoniosSlides = document.querySelectorAll('.testimonios');
     const dotButtons = document.querySelectorAll('.dot');
   

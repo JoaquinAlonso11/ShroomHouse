@@ -68,12 +68,13 @@
             width: 15px;
             margin: 0 8px;
         }
+        &.active {
+            background-color: $colorHover1;
+            transform: scale(1.2);
+            transition: transform 0.3s ease;
+        }
     }
-    .dot.active {
-        background-color: $colorHover1;
-        transform: scale(1.2);
-        transition: transform 0.3s ease;
-    }
+    
     
 }
 
