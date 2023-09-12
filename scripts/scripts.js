@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
   
 // Script 2: Carrusel de imágenes
-// Script 2: Carrusel de imágenes
+if (window.location.pathname.endsWith("index.html") || window.location.pathname === '/') {
 let slideIndex = 1;
 let interval;
 
@@ -55,7 +55,7 @@ document.getElementById("anterior").addEventListener("click", function() {
 document.getElementById("siguiente").addEventListener("click", function() {
   plusSlides(1); // Avanza un slide
 });
-  
+}
     // Script 3: Testimonios
     
     
