@@ -1,5 +1,3 @@
-# ShroomHouse
-Proyecto Desarrollo Web en CoderHouse
 <div align='center'>
 
 <h1>Proyecto Web ShroomPlace</h1>
@@ -26,10 +24,10 @@ Proyecto Desarrollo Web en CoderHouse
 ### :art: Color Reference
 | Color | Hex |
 | --------------- | ---------------------------------------------------------------- |
-| Primary Color | ![#070000](https://via.placeholder.com/10/070000?text=+) #070000 |
-| Secondary Color | ![#f9f9f9](https://via.placeholder.com/10/f9f9f9?text=+) #f9f9f9 |
-| Accent Color | ![#f1d2c0](https://via.placeholder.com/10/f1d2c0?text=+) #f1d2c0 |
-| Text Color | ![#f6f1f1](https://via.placeholder.com/10/f6f1f1?text=+) #f6f1f1 |
+| Primary Color | ![#white](https://via.placeholder.com/10/white?text=+) #white |
+| Secondary Color | ![#black](https://via.placeholder.com/10/black?text=+) #black |
+| Accent Color | ![#FFFCF8](https://via.placeholder.com/10/FFFCF8?text=+) #FFFCF8 |
+| Text Color | ![#black](https://via.placeholder.com/10/black?text=+) #black |
 
 ### :scroll: Code of Conduct
 
