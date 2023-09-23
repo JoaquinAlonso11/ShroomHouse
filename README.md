@@ -3,7 +3,7 @@
 <h1>Proyecto Web ShroomPlace</h1>
 <p>Repositorio creado para el curso de Desarrollo Web de CoderHouse</p>
 
-<h4> <a href=https://i.ibb.co/FbK5D47/shroomhouse-print.jpg>View Demo</a> <span> · </span> <a href="https://github.com/JoaquinAlonso11/ShroomPlace/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/JoaquinAlonso11/ShroomPlace/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/JoaquinAlonso11/ShroomPlace/issues"> Request Feature </a> </h4>
+<h4> <a href=https://joaquinalonso11.github.io/ShroomHouse/>View Demo</a> <span> · </span> <a href="https://github.com/JoaquinAlonso11/ShroomPlace/blob/master/README.md"> Documentation </a> <span> · </span> <a href="https://github.com/JoaquinAlonso11/ShroomPlace/issues"> Report Bug </a> <span> · </span> <a href="https://github.com/JoaquinAlonso11/ShroomPlace/issues"> Request Feature </a> </h4>
 
 
 </div>
