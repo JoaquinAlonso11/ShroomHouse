@@ -810,9 +810,11 @@ body a, body p, body label {
 .textExperiences {
   margin: 6rem 0 2rem 0;
 }
-.textExperiences h1 {
+.textExperiences h2 {
   text-align: center;
   margin-bottom: 4rem;
+  font-size: 60px;
+  text-shadow: 0 0 1.5px black;
 }
 .textExperiences h4 {
   font-size: 0.8rem;
