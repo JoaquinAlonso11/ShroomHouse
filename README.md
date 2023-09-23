@@ -37,4 +37,4 @@ Please read the [Code of Conduct](https://github.com/JoaquinAlonso11/ShroomHouse
 
 - - acoalonso11@gmail.com
 
-Project Link: [https://github.com/JoaquinAlonso11/ShroomHouse](https://github.com/JoaquinAlonso11/ShroomHouse)
+Project Link: [[https://github.com/JoaquinAlonso11/ShroomHouse](http://shroomhouse.free.nf/)]
