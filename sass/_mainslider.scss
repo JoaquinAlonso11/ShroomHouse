@@ -42,7 +42,7 @@
     height: 100%;
     box-sizing: border-box; 
 
-    h1 {
+    h1, h2 {
         text-align: center;
         margin: 2rem;
 
@@ -50,6 +50,11 @@
             margin: 0rem;
         }
         }
+    
+    h2 {
+        font-size: 60px;
+        text-shadow: 0 0 1.5px black;
+    }
 
     @include mobile {
         flex-direction: column;

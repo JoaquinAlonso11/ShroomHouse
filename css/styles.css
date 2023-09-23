@@ -233,14 +233,18 @@ body a, body p, body label {
   height: 100%;
   box-sizing: border-box;
 }
-.prodSlider h1 {
+.prodSlider h1, .prodSlider h2 {
   text-align: center;
   margin: 2rem;
 }
 @media screen and (max-width: 790px) {
-  .prodSlider h1 {
+  .prodSlider h1, .prodSlider h2 {
     margin: 0rem;
   }
+}
+.prodSlider h2 {
+  font-size: 60px;
+  text-shadow: 0 0 1.5px black;
 }
 @media screen and (max-width: 790px) {
   .prodSlider {
@@ -374,9 +378,11 @@ body a, body p, body label {
   align-content: center;
   flex-direction: column;
 }
-.centralBanner .callCentralBanner .callCentralBanner h1 {
+.centralBanner .callCentralBanner h2 {
   text-align: center;
   margin-bottom: 1rem;
+  font-size: 60px;
+  text-shadow: 0 0 1.5px black;
 }
 .centralBanner .callCentralBanner .enlaceBoton {
   margin-top: 2rem;
