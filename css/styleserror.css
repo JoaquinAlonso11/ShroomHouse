@@ -22,6 +22,7 @@ body{
 .fof{
 	  display: table-cell;
 	  vertical-align: middle;
+      background-color: #FFFCF8;
 }
 
 .fof h1{
