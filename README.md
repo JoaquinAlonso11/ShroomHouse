@@ -24,10 +24,10 @@
 ### :art: Color Reference
 | Color | Hex |
 | --------------- | ---------------------------------------------------------------- |
-| Primary Color | ![#white](https://via.placeholder.com/10/white?text=+) #white |
-| Secondary Color | ![#black](https://via.placeholder.com/10/black?text=+) #black |
+| Primary Color | ![#FFFFFF](https://via.placeholder.com/10/white?text=+) #FFFFFF |
+| Secondary Color | ![#000000](https://via.placeholder.com/10/black?text=+) #000000 |
 | Accent Color | ![#FFFCF8](https://via.placeholder.com/10/FFFCF8?text=+) #FFFCF8 |
-| Text Color | ![#black](https://via.placeholder.com/10/black?text=+) #black |
+| Text Color | ![#000000](https://via.placeholder.com/10/black?text=+) #000000 |
 
 ### :scroll: Code of Conduct
 
