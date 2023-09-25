@@ -4,6 +4,7 @@
     margin: 0 auto; 
     padding-top: 100px;
     
+    
     .testimonios {
         text-align: center;
         max-width: 500px;
@@ -12,6 +13,7 @@
         border: 1px solid #ccc;
         border-radius: 5px;
         background: rgba(0, 0, 0, 0.1);
+        transition: opacity 0.3s ease;
         
         .testimoniosImg {
             width: 150px; 
@@ -62,6 +64,7 @@
         display: inline-block;
         margin: 0 5px;
         cursor: pointer;
+        
 
         @include tablet {
             height: 15px;
