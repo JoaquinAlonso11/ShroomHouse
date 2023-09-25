@@ -28,6 +28,10 @@
     font-size: small;
     font-weight: 600;
     margin: 2rem;
+
+    @include mobile {
+        margin: 1rem;
+    }
     
     }
     .imgNosotros {

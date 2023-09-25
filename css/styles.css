@@ -695,6 +695,11 @@ body a, body p, body label {
   font-weight: 600;
   margin: 2rem;
 }
+@media screen and (max-width: 790px) {
+  .mainNosotros .textoNosotros {
+    margin: 1rem;
+  }
+}
 .mainNosotros .imgNosotros {
   max-width: 70%;
   max-height: 70%;
@@ -808,7 +813,7 @@ body a, body p, body label {
 }
 @media screen and (max-width: 1200px) {
   .mainExperiences .callExperiences p {
-    margin: 0 5rem;
+    margin: 0 2rem;
   }
 }
 .mainExperiences .callExperiences h4 {
